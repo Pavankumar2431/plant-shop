@@ -58,13 +58,11 @@ const Header = () => {
       {/* Mobile Navigation */}
       <nav className="navbar-mobile navbar navbar-expand-lg d-lg-none">
         <div className="container">
-          <a className="navbar-brand" href="#">
             <img
               src="https://res.cloudinary.com/dgaxscbrn/image/upload/v1729267847/easmithlogo_dfqibp.png"
               className="logo"
               alt="Logo"
             />
-          </a>
           <button className="navbar-toggler" type="button" onClick={toggleNavbar}>
             <span className="navbar-toggler-icon"></span>
           </button>
