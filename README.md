@@ -14,15 +14,15 @@ This project showcases a Product List page for an e-commerce website that sells 
 
 ### Installation
 
-###Clone the repository
-    git clone https://github.com/Pavankumar2431/plant-shop.git
-    cd plant-shop
-###Install dependencies
-    npm install
-###Start the development server
-    npm start
-###Open your browser and go to
-    http://localhost:3000
+### Clone the repository
+    "git clone https://github.com/Pavankumar2431/plant-shop.git"
+    "cd plant-shop"
+### Install dependencies
+    "npm install"
+### Start the development server
+    "npm start"
+### Open your browser and go to
+    "http://localhost:3000"
 
 ### Components
 
