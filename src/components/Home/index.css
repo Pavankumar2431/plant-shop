@@ -1,0 +1,141 @@
+/* General container padding for responsiveness */
+.container {
+    padding: 5px 22px;
+    max-width: 100%;
+    margin: 0 10px 0 10px;
+}
+
+/* Buttons styling */
+.plant-button {
+    background-color: #165315;
+    color: #fff;
+    border: none;
+    padding: 0px 15px 0px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.post-button {
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 0px 15px 0px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Text paragraph styling */
+.paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    text-align: left;
+}
+
+/* Products container */
+.products-card{
+    display: flex;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Product list with flex layout */
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Pagination controls styling */
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.prev-button, .next-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.prev-button:disabled, .next-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.prev-button:hover:not(:disabled), .next-button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+.pagination-controls span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+.categories-button{
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Stack buttons vertically on small screens */
+    .d-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .products-card{
+        flex-direction: column;
+    }
+    /* Products container adjustments for smaller screens */
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagination-controls {
+        justify-content: center;
+    }
+
+    .prev-button, .next-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .plant-button, .post-button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .paragraph {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .prev-button, .next-button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}

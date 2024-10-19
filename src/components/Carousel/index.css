@@ -1,0 +1,33 @@
+.carousel-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+  .carousel-img {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel-img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-img {
+    width: 50px;
+    height: 50px;
+  }
+}

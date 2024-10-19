@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+### title
+Plant Shop - (E-commerce Listing Page)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project showcases a Product List page for an e-commerce website that sells plants. It includes features like viewing product details, adding products to a shopping cart, a carousel, pagination with "Prev" and "Next" buttons, and a responsive design. Note that the filtering functionality is currently static.
 
-## Available Scripts
+### Features
+•	Product List Display: Each product is shown with an image, name, and price.
+•	View Product: Button to view more details about a specific product.
+•	Add to Cart: Button to add products to the shopping cart.
+•	Carousel: A rotating carousel that can be used to display featured products.
+•	Static Filter Section: A static filter section is displayed but doesn't dynamically filter the product list.
+•	Pagination: Use "Prev" and "Next" buttons to navigate through the product list.
+•	Responsive Design: The webpage is fully responsive for mobile, tablet, and desktop views.
 
-In the project directory, you can run:
+### Installation
 
-### `npm start`
+1.Clone the repository:
+    git clone https://github.com/Pavankumar2431/plant-shop.git
+    cd plant-shop
+2.Install dependencies:
+    npm install
+3.Start the development server:
+    npm start
+4.Open your browser and go to:
+    http://localhost:3000
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Components
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. AddtoCart Component
+Handles the functionality for the React modal. The user will be able to see a confirmation modal upon clicking the "Add to Cart" button of the product.
+**Props** 
+ -`isOpen`: A boolean indicating whether the modal is open. 
+ -`onRequestClose`: A function to handle closing the modal.
 
-### `npm test`
+2. Carousel Component
+Displays a rotating carousel showcasing featured products. The carousel can be navigated with next and previous arrows.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. FilterCard Component
+This component displays a static filter section. The filter options are not interactive yet and do not modify the product list.
 
-### `npm run build`
+4. Footer Component
+The footer contains informational content about the website. It provides basic site details but does not have interactive elements.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Header Component
+The header contains the main navigation links like Home, Plants & Pots, Tools, and user profile/cart information.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. Home Component
+The main landing page displaying the product list.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+7. ProductCard Component
+Renders individual product cards with buttons to view product details and add to the cart.
 
-### `npm run eject`
+**Props** 
+product: The product object containing its name, price, and image.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+8. ThankYou Component
+This component is shown after a user clicks on View button, thanking them for clicking.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+9. Pagination Feature
+A simple pagination system with "Prev" and "Next" buttons that allow users to browse through the product list. The product list is paginated using static data.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Error Handling
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Target Container Not a DOM Element:
+Ensure your modal's root container is correctly defined in the index.html or where the AddtoCartModal is rendered.
 
-## Learn More
+### Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+React: A JavaScript library for building user interfaces.
+React-DOM: Serves as the entry point to the DOM and server renderers for React.
+React-Scripts: Configuration and scripts for Create React App.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Install the necessary dependencies using:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm install react react-dom react-scripts

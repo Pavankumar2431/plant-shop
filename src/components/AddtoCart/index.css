@@ -1,0 +1,62 @@
+/* index.css */
+
+.modal {
+    /* Add your modal styles here */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000; /* Make sure it's above other content */
+}
+
+.modal-overlay {
+    /* Overlay styles */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Make sure it's above other content */
+}
+.plant{
+    height: 110px;
+    width: 110px;
+}
+.cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.your-cart{
+    border-bottom: 1px solid black;
+    color: #0F4811;
+    
+}
+.order{
+    color: #165315;
+
+}
+.msg{
+    color: #0F4811;
+}
+.modal-button{
+    background-color: #165315;
+    color: #fff;
+    width: 60%;
+    padding: 8px;
+}
+.close-icon{
+    text-align: right;
+}
+.close-button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
